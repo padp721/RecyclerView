@@ -52,6 +52,7 @@ public class GtrAdapter extends RecyclerView.Adapter<GtrAdapter.GtrViewHolder> {
                 Intent intent = new Intent(mCtx, ViewDetail.class);
                 intent.putExtra("image_url", gtr.getImage());
                 intent.putExtra("image_name", gtr.getName());
+                intent.putExtra("image_desc", gtr.getDesc());
                 mCtx.startActivity(intent);
             }
         });
